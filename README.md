@@ -1,4 +1,4 @@
-# Large Language Models - Homework 1
+# Large Language Model - Homework 1
 
 This homework is part of the **Large Language Model** course and explores different NLP model architectures, including N-Gram, RNN, and Transformer models, using real-world datasets.
 
