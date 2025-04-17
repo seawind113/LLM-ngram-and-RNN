@@ -1,7 +1,6 @@
-# LLM-ngram-and-RNN
-# Large Language Models - Homework 1
+# Large Language Models - Homework 1 Part 1
 
-This project is the first part of an assignment for the **Large Language Models** course, using a dataset sampled from the ["Food.com Recipes and Interactions"](https://www.kaggle.com/datasets) dataset. The goal is to build language models that predict the next token in recipe step instructions.
+This project is the first part of an assignment for the **Large Language Model** course, using a dataset sampled from the ["Food.com Recipes and Interactions"](https://www.kaggle.com/datasets) dataset. The goal is to build language models that predict the next token in recipe step instructions.
 
 ---
 
@@ -10,7 +9,6 @@ This project is the first part of an assignment for the **Large Language Models*
 - **Training data**: `train.txt` (~2.6M entries)  
 - **Test data**: `test.txt` (~650K entries)  
 - **Sentence completion**: `incomplete.txt` (10 incomplete sentences)  
-- Only the "steps" portion of the dataset was used.
 
 ---
 
@@ -56,7 +54,3 @@ Compared the N-gram and RNN models based on:
 - PyTorch  
 - Basic libraries: `NumPy`, `Pandas`, `collections`, etc.  
 - **No advanced NLP libraries** (e.g., no `scikit-learn` or `torch.nn.MultiheadAttention` used for N-gram or Attention parts, as per the assignment rules)
-
-Predict tokens on the test set and calculate accuracy.
-
-Complete the same incomplete sentences from Part 1 for comparison with the n-gram results.
