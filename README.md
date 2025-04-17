@@ -1,14 +1,31 @@
-# Large Language Models - Homework 1 Part 1
+# Large Language Models - Homework 1
 
-This project is the first part of an assignment for the **Large Language Model** course, using a dataset sampled from the ["Food.com Recipes and Interactions"](https://www.kaggle.com/datasets) dataset. The goal is to build language models that predict the next token in recipe step instructions.
+This homework is part of the **Large Language Model** course and explores different NLP model architectures, including N-Gram, RNN, and Transformer models, using real-world datasets.
+
+---
+
+## 📚 Table of Contents
+
+- [📁 Dataset Description](#-dataset-description)
+- [🧠 Part 1: N-Gram Model](#-part-1-n-gram-model)
+- [🔁 Part 2: RNN Model](#-part-2-rnn-model)
+- [🧲 Part 3: Self-Attention Layer in Transformer](#-part-3-self-attention-layer-in-transformer)
+- [📊 Comparison and Analysis](#-comparison-and-analysis)
+- [⚙️ Environment & Tools](#️-environment--tools)
+- [🚫 Note](#-note)
 
 ---
 
 ## 📁 Dataset Description
 
-- **Training data**: `train.txt` (~2.6M entries)  
-- **Test data**: `test.txt` (~650K entries)  
-- **Sentence completion**: `incomplete.txt` (10 incomplete sentences)  
+- **Part 1 & 2**: Recipe step sentences from `Food.com Recipes and Interactions`  
+  - `train.txt`: ~2.6M entries  
+  - `test.txt`: ~650K entries  
+  - `incomplete.txt`: 10 incomplete sentences
+
+- **Part 3**: Emotion classification dataset  
+  - `train.csv`, `val.csv`, `test.csv`  
+  - Each line contains a sentence and its corresponding emotion tag (5 total emotions)
 
 ---
 
@@ -38,13 +55,26 @@ Built an RNN using **PyTorch** with the following hyperparameters:
 
 ---
 
+## 🧲 Part 3: Self-Attention Layer in Transformer
+
+This part focuses on implementing the core components of a Transformer model for emotion classification.
+
+- 🧩 Completed the **Multi-head Attention** and **Transformer Encoder Layer** from scratch.
+- 📈 Trained the model on the provided dataset. It achieved the expected accuracy threshold.
+- ⚙️ Experimented with different **numbers of attention heads** (1, 4, 8) to observe performance variation.
+  - The number of heads significantly impacted the model’s performance and training behavior.
+
+---
+
 ## 📊 Comparison and Analysis
 
-Compared the N-gram and RNN models based on:
-- Prediction accuracy
-- Computation time
-- Hardware resource usage
-- Sentence completion quality
+Compared the models based on:
+
+- ✅ Accuracy  
+- ⏱️ Computation time  
+- 🧠 Memory and hardware usage  
+- ✍️ Quality of sentence completion (N-Gram vs. RNN)  
+- 🧲 Effect of attention heads on Transformer model performance
 
 ---
 
@@ -52,5 +82,12 @@ Compared the N-gram and RNN models based on:
 
 - Python 3.x  
 - PyTorch  
-- Basic libraries: `NumPy`, `Pandas`, `collections`, etc.  
-- **No advanced NLP libraries** (e.g., no `scikit-learn` or `torch.nn.MultiheadAttention` used for N-gram or Attention parts, as per the assignment rules)
+- `NumPy`, `Pandas`, `collections`, etc.  
+- GPU support for RNN and Transformer training  
+- No use of advanced NLP libraries for restricted parts (e.g., no `torch.nn.MultiheadAttention`)
+
+---
+
+## 🚫 Note
+
+All implementations were done independently following assignment guidelines. No plagiarism or use of restricted libraries.
